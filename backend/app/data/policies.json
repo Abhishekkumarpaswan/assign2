@@ -1,0 +1,50 @@
+[
+  {
+    "category": "Wellness & Care",
+    "window_days": 14,
+    "allowed_reasons": ["damaged", "defective", "wrong item", "allergic reaction reported", "expired"],
+    "non_refundable_items": ["used consumable items without seal", "tampered safety packaging"],
+    "condition_required": "Original packaging with safety seals intact, unless reported damaged upon arrival.",
+    "notes": "Full refund or replacement available within 14 days of delivery. Refunds above ₹5,000 require manual review."
+  },
+  {
+    "category": "Health Tech & Devices",
+    "window_days": 30,
+    "allowed_reasons": ["defective hardware", "malfunctioning sensor", "dead on arrival", "inaccurate reading verified", "damaged in transit"],
+    "non_refundable_items": ["physically broken by misuse", "liquid damage unless IP certified"],
+    "condition_required": "Must include original cables, manual, accessories and warranty card.",
+    "notes": "30-day trial and defect coverage. Any return with value above ₹5,000 triggers senior agent escalation."
+  },
+  {
+    "category": "Herbal & Botanicals",
+    "window_days": 7,
+    "allowed_reasons": ["broken seal on arrival", "spoilage", "expired batch", "wrong product delivered"],
+    "non_refundable_items": ["opened containers past 7 days", "stored in improper temperature after receipt"],
+    "condition_required": "Safety tamper seal must be photographed if broken upon delivery.",
+    "notes": "Fast-track refund if reported within 7 days of delivery date."
+  },
+  {
+    "category": "Personal Care & Clinical",
+    "window_days": 10,
+    "allowed_reasons": ["leakage in courier", "damaged pump/nozzle", "skin adverse effect", "incorrect formulation"],
+    "non_refundable_items": ["more than 20% consumed", "unsealed hygiene products without defect"],
+    "condition_required": "Proof of batch number and delivery date required.",
+    "notes": "Hygiene protected items are eligible for refund only if defective, leaking, or damaged upon arrival."
+  },
+  {
+    "category": "Apparel & Compression",
+    "window_days": 14,
+    "allowed_reasons": ["size mismatch", "fabric tear", "defective zipper", "wrong color"],
+    "non_refundable_items": ["washed items", "missing brand tags"],
+    "condition_required": "Unwashed with original tags attached.",
+    "notes": "Exchange or refund within 14 days."
+  },
+  {
+    "category": "General",
+    "window_days": 14,
+    "allowed_reasons": ["defective", "damaged", "not as described", "late delivery past SLA"],
+    "non_refundable_items": ["digital gift cards", "personalized custom orders"],
+    "condition_required": "Original condition with packaging.",
+    "notes": "Standard 14-day customer satisfaction guarantee across the platform."
+  }
+]

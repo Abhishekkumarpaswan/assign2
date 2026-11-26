@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kinetic-support-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=Kinetic E-Commerce AI Support
+      - SECRET_KEY=${SECRET_KEY:-local-development-only-change-before-production}
+      - DATABASE_URL=sqlite:///./kinetic_support.db
+      - MAX_AUTO_REFUND_AMOUNT=5000.0
+      - DEFAULT_RETURN_WINDOW_DAYS=14
+      - LLM_PROVIDER=${LLM_PROVIDER:-auto}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - GROQ_MODEL=${GROQ_MODEL:-openai/gpt-oss-120b}
+    volumes:
+      - app-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  app-data:
